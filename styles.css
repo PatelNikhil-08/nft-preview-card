@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Outfit:wght@300;400;600&family=Sacramento&display=swap');
+
+*{
+
+    padding: 0; 
+    margin: 0; 
+
+}
+
+
+body { 
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    
+}
+
+
+.container{
+    max-width: 350px;
+    margin: 0 auto;
+    
+
+}
+
+.card {
+    margin: 2rem 1rem;
+    padding: 20px; 
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 16px; 
+    height: 100%;
+
+}
+
+.img-ontop{
+    border-radius: 11px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+
+.img-ontop img{
+    width: 100%;
+    display: block; 
+}
+
+
+.image-overlay img{
+    position: absolute; 
+    width: 50px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%); 
+}
+
+.text a{ 
+    color: hsl(0, 0%, 100%); 
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 0; 
+    display: inline-block;
+}
+
+.image-overlay{
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5); 
+    display: none; 
+    
+}
+
+.img-ontop:hover .image-overlay{
+    display: block;
+
+}
+
+p{
+    color: hsl(215, 51%, 70%); 
+}
+
+.text a:hover{
+    color:hsla(178, 100%, 50%);
+}
+
+.block-text { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+}
+
+.etc-block, .time-block { 
+    display: flex; 
+    align-items: center;
+}
+
+
+.etc-block p{
+    color:hsla(178, 100%, 50%); 
+    font-weight: 600; 
+    padding-left: 4px; 
+}
+
+.time-block p{
+    padding-left: 4px;
+}
+
+
+.avatar-block{
+    display: flex; 
+    align-items: center; 
+    padding-top: 5px; 
+}
+
+.avatar-block img{
+    width: 30px; 
+    border: 2px solid white;
+    border-radius: 50%; 
+}
+
+.avatar-block p {
+    padding-left: 7px;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);
+}
